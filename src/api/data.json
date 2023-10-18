@@ -1,0 +1,786 @@
+[
+    {
+        "question": "Kota di mana Paulus menemui Akwila dan Priskila",
+        "answers": [
+            "Korintus",
+            "Kaesarea",
+            "Roma",
+            "Yerusalem"
+        ],
+        "correct": "Korintus",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Kota tempat Paulus lahir",
+        "answers": [
+            "Yerusalem",
+            "Tarsus",
+            "Roma",
+            "Kaesarea"
+        ],
+        "correct": "Tarsus",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Nama tempat di mana Yesus mengucapkan Khotbah di Bukit",
+        "answers": [
+            "Karmel",
+            "Ararat",
+            "Betel",
+            "Zaitun"
+        ],
+        "correct": "Zaitun",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Nama lembah tempat Daud mengalahkan raksasa Goliat",
+        "answers": [
+            "Ela",
+            "Kidron",
+            "Arava",
+            "Terebin"
+        ],
+        "correct": "Ela",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Tokoh yang menggantikan Yudas Iskariot sebagai rasul",
+        "answers": [
+            "Tomas",
+            "Matias",
+            "Simon",
+            "Stefanus"
+        ],
+        "correct": "Matias",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Abraham dikubur dimana",
+        "answers": [
+            "Kidron",
+            "Siddim",
+            "Betel",
+            "Makhpela"
+        ],
+        "correct": "Makhpela",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Tempat dimana ada dua belas mata air dan tujuh puluh pohon palem",
+        "answers": [
+            "Gerezim",
+            "Urkasdim",
+            "Sumur Yakub ",
+            "Elim"
+        ],
+        "correct": "Elim",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Kolam dimana Yesus menyembuhkan orang yang lumpuh",
+        "answers": [
+            "Siloam",
+            "Betesda",
+            "Gat",
+            "Arza"
+        ],
+        "correct": "Betesda",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Di puncak gunung mana Musa dapat melihat tanah perjanjian?",
+        "answers": [
+            "Nebo",
+            "Hebron",
+            "Sinai",
+            "Moria"
+        ],
+        "correct": "Nebo",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Di gunung mana Abraham diuji Tuhan untuk mengorbankan Ishak ?",
+        "answers": [
+            "Nebo",
+            "Hebron",
+            "Sinai",
+            "Moria"
+        ],
+        "correct": "Moria",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa yang mengkhianati Yesus?",
+        "answers": [
+            "Petrus",
+            "Yudas",
+            "Yohanes",
+            "Matius"
+        ],
+        "correct": "Yudas",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa kali Petrus menyangkal Yesus?",
+        "answers": [
+            "Satu kali",
+            "Dua kali",
+            "Tiga kali",
+            "Empat kali"
+        ],
+        "correct": "Tiga kali",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa yang membantu Yesus membawa salib?",
+        "answers": [
+            "Simon dari Kirene",
+            "Yusuf dari Arimatea",
+            "Yohanes",
+            "Nikodemus"
+        ],
+        "correct": "Simon dari Kirene",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa jumlah penjahat yang disalibkan bersama Yesus? ",
+        "answers": [
+            "Satu",
+            "Dua",
+            "Tiga",
+            "Empat"
+        ],
+        "correct": "Dua",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa yang meminta tubuh Yesus setelah Ia mati? ",
+        "answers": [
+            "Yusuf dari Arimatea",
+            "Simon dari Kirene",
+            "Nikodemus",
+            "Yohanes"
+        ],
+        "correct": "Yusuf dari Arimatea",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa yang pertama kali melihat Yesus setelah Ia bangkit? ",
+        "answers": [
+            "Maria Magdalena",
+            "Petrus",
+            "Yohanes",
+            "Tomas"
+        ],
+        "correct": "Maria Magdalena",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apa yang Yesus minta kepada Tomas yang meragukan kebangkitan-Nya?",
+        "answers": [
+            "Untuk melihat luka-luka-Nya",
+            "Untuk berdoa",
+            "Untuk memberitakan Injil",
+            "Untuk mengikuti-Nya"
+        ],
+        "correct": "Untuk melihat luka-luka-Nya",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apa yang Yesus lakukan ketika Ia bertemu dengan murid-murid-Nya di tepi danau setelah kebangkitan-Nya?",
+        "answers": [
+            "Mengajar mereka",
+            "Memberkati mereka",
+            "Memasak ikan untuk mereka",
+            "Berdoa bersama mereka"
+        ],
+        "correct": "Memasak ikan untuk mereka",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apa yang murid-murid Yesus lakukan setelah Ia naik ke surga?",
+        "answers": [
+            "Mereka kembali ke Yerusalem",
+            "Mereka pergi ke Galilea",
+            "Mereka berdoa di taman Getsemani",
+            "Mereka pergi ke Samaria"
+        ],
+        "correct": "Mereka kembali ke Yerusalem",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang memimpin umat Israel melewati Laut Merah? (Keluaran 14:21)",
+        "answers": [
+            "Musa",
+            "Daud",
+            "Ibrahim",
+            "Noah"
+        ],
+        "correct": "Musa",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang meminta Pilatus agar boleh menurunkan tubuh Yesus dari salib?",
+        "answers": [
+            "Maria Magdalena",
+            "Petrus",
+            "Yohanes",
+            "Yusuf dari Arimatea"
+        ],
+        "correct": "Yusuf dari Arimatea",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang pertama kali melihat Yesus yang telah bangkit?",
+        "answers": [
+            "Yohanes",
+            "Petrus",
+            "Maria Magdalena",
+            "Yakobus"
+        ],
+        "correct": "Maria Magdalena",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa banyak kitab Injil dalam Alkitab?",
+        "answers": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct": "4",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Injil yang menekankan keilahian Yesus adalah Injil ______.",
+        "answers": [
+            "Matius",
+            "Markus",
+            "Lukas",
+            "Yohanes"
+        ],
+        "correct": "Yohanes",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Di mana Yesus mengalami penyaliban menurut Injil Matius?",
+        "answers": [
+            "Golgota",
+            "Bukit Zaitun",
+            "Taman Eden",
+            "Kapernaum"
+        ],
+        "correct": "Golgota",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang menjadi raja ketika Yesus lahir? (Matius 2:1)",
+        "answers": [
+            "Herodes",
+            "Pilatus",
+            "Kaisar Augustus",
+            "Kaisar Tiberius"
+        ],
+        "correct": "Herodes",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Dalam kitab Wahyu, berapa jumlah segel yang harus dibuka? (Wahyu 5:1)",
+        "answers": [
+            "7",
+            "6",
+            "12",
+            "10"
+        ],
+        "correct": "7",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Dari kota manakah Saulus berasal? (Kisah 9:11)",
+        "answers": [
+            "Tarsus",
+            "Damaskus",
+            "Galatia",
+            "Roma"
+        ],
+        "correct": "Tarsus",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang membangun Bait Suci pertama di Yerusalem? (1 Raja-raja 6:1)",
+        "answers": [
+            "Salomo",
+            "Daud",
+            "Zerubabel",
+            "Hiram"
+        ],
+        "correct": "Salomo",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang melahirkan anak kembar Esau dan Yakub? (Kejadian 25:24)",
+        "answers": [
+            "Ribka",
+            "Sara",
+            "Hana",
+            "Rut"
+        ],
+        "correct": "Ribka",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    }
+    ,
+    {
+        "question": "Apakah nama anak perempuan Yeftha yang dikurbankan sebagai korban bakaran? (Hakim-hakim 11:29-40)",
+        "answers": [
+            "Maria",
+            "Tamar",
+            "Lea",
+            "Havila"
+        ],
+        "correct": "Havila",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nama pahlawan yang menangkap singa dengan tangannya sendiri? (1 Samuel 17:34)",
+        "answers": [
+            "Daud",
+            "Gideon",
+            "Yosua",
+            "Dian"
+        ],
+        "correct": "Daud",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa nama gembala yang menerima janji Allah bahwa keturunannya akan menjadi raja selamanya? (Kejadian 17:19)",
+        "answers": [
+            "Daud",
+            "Musa",
+            "Abraham",
+            "Yakub"
+        ],
+        "correct": "Abraham",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nama pemilik tanah yang memberikan kuburan untuk Yesus setelah Ia disalibkan? (Matius 27:57)",
+        "answers": [
+            "Yosef dari Arimatea",
+            "Nikodemus",
+            "Yusuf",
+            "Barabas"
+        ],
+        "correct": "Yosef dari Arimatea",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apakah nama malaikat yang memberitakan kepada Maria bahwa Ia akan melahirkan Yesus? (Lukas 1:26)",
+        "answers": [
+            "Mikhael",
+            "Gabriel",
+            "Rafael",
+            "Uriel"
+        ],
+        "correct": "Gabriel",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah penulis dari Kitab Kejadian?",
+        "answers": [
+            "Daud",
+            "Adam",
+            "Musa",
+            "Salomo"
+        ],
+        "correct": "Musa",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa kitab dalam Perjanjian Baru?",
+        "answers": [
+            "30",
+            "27",
+            "40",
+            "20"
+        ],
+        "correct": "27",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang memimpin umat Israel keluar dari perbudakan di Mesir?",
+        "answers": [
+            "Musa",
+            "Nuh",
+            "Abraham",
+            "Yusuf"
+        ],
+        "correct": "Musa",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa kali Yesus jatuh saat membawa salib-Nya?",
+        "answers": [
+            "Satu kali",
+            "Dua kali",
+            "Tiga kali",
+            "Empat kali"
+        ],
+        "correct": "Tiga kali",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apa yang terjadi saat Yesus mati di kayu salib?",
+        "answers": [
+            "Gempa bumi",
+            "Badai petir",
+            "Hujan lebat",
+            "Panas terik"
+        ],
+        "correct": "Gempa bumi",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    }
+    ,
+
+    {
+        "question": "Siapakah nama pahlawan yang memukul ribuan orang dengan tulang keledai?",
+        "answers": [
+            "Simson",
+            "Gideon",
+            "Daud",
+            "Yosua"
+        ],
+        "correct": "Simson",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apakah nama perempuan yang mendatangi Yesus dan memohon agar anaknya disembuhkan?",
+        "answers": [
+            "Maria Magdalena",
+            "Maria ibu Yesus",
+            "Salome",
+            "Perempuan Kanaan"
+        ],
+        "correct": "Perempuan Kanaan",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa banyak orang yang bisa makan dari 5 roti dan 2 ikan?",
+        "answers": [
+            "1000",
+            "5000",
+            "7000",
+            "10000"
+        ],
+        "correct": "5000",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nama pengkhianat yang menghianati Yesus dengan ciuman?",
+        "answers": [
+            "Yudas Iskariot",
+            "Yohanes",
+            "Petrus",
+            "Yakobus"
+        ],
+        "correct": "Yudas Iskariot",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapa nama raja yang menerima surat yang isinya meminta izin untuk membangun kembali Yerusalem?",
+        "answers": [
+            "Darius",
+            "Koresy",
+            "Ahasyweros",
+            "Artahsasta"
+        ],
+        "correct": "Artahsasta",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nama pemimpin yang dibunuh oleh Yael dengan menancapkan patok di kepalanya?",
+        "answers": [
+            "Debora",
+            "Yael",
+            "Yaela",
+            "Sisera"
+        ],
+        "correct": "Sisera",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa banyak hari Yesus berpuasa di padang gurun sebelum Ia mulai pelayanannya?",
+        "answers": [
+            "20",
+            "30",
+            "40",
+            "50"
+        ],
+        "correct": "40",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa banyak kitab Injil dalam Alkitab?",
+        "answers": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct": "4",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nama pemimpin yang dipilih Tuhan untuk menjadi raja berikutnya?",
+        "answers": [
+            "Daud",
+            "Samuel",
+            "Saul",
+            "Yonatan"
+        ],
+        "correct": "Daud",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Apakah nama nabi yang dimakan oleh ikan besar selama tiga hari tiga malam?",
+        "answers": [
+            "Mikha",
+            "Hosea",
+            "Yunus",
+            "Amos"
+        ],
+        "correct": "Yunus",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    }
+    ,
+    {
+        "question": "Siapakah yang memimpin umat Israel melewati Laut Merah? (Keluaran 14:21)",
+        "answers": [
+            "Musa",
+            "Daud",
+            "Ibrahim",
+            "Noah"
+        ],
+        "correct": "Musa",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah nabi yang berinteraksi dengan seekor keledai berbicara? (Bilangan 22:28)",
+        "answers": [
+            "Yeremia",
+            "Bileam",
+            "Yesaya",
+            "Hosea"
+        ],
+        "correct": "Bileam",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Dalam Perjanjian Baru, siapakah yang mengkhianati Yesus? (Markus 14:10)",
+        "answers": [
+            "Petrus",
+            "Yudas Iskariot",
+            "Yohanes",
+            "Matius"
+        ],
+        "correct": "Yudas Iskariot",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Kota manakah tempat Yesus lahir? (Lukas 2:4)",
+        "answers": [
+            "Yerusalem",
+            "Betlehem",
+            "Nazaret",
+            "Yeriko"
+        ],
+        "correct": "Betlehem",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Berapa jumlah murid yang dipilih oleh Yesus? (Matius 10:1)",
+        "answers": [
+            "12",
+            "7",
+            "10",
+            "40"
+        ],
+        "correct": "12",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Pada hari ke berapa Tuhan menciptakan manusia? (Kejadian 1:27)",
+        "answers": [
+            "Hari ke-6",
+            "Hari ke-7",
+            "Hari ke-5",
+            "Hari ke-4"
+        ],
+        "correct": "Hari ke-6",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang menggantikan Musa sebagai pemimpin umat Israel? (Yosua 1:2)",
+        "answers": [
+            "Yosua",
+            "Samuel",
+            "Daud",
+            "Saul"
+        ],
+        "correct": "Yosua",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang membangun bahtera untuk menyelamatkan keluarganya dari banjir besar? (Kejadian 6:14)",
+        "answers": [
+            "Nuh",
+            "Abraham",
+            "Isaak",
+            "Yakub"
+        ],
+        "correct": "Nuh",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang menjadi raja setelah Raja Saul? (1 Samuel 16:13)",
+        "answers": [
+            "Daud",
+            "Salomo",
+            "Rehabeam",
+            "Yosia"
+        ],
+        "correct": "Daud",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Siapakah yang menjadi raja setelah Raja Daud? (1 Raja-raja 1:30)",
+        "answers": [
+            "Salomo",
+            "Rehabeam",
+            "Asa",
+            "Yosia"
+        ],
+        "correct": "Salomo",
+        "category": "Nama & Tempat",
+        "type": "multiple",
+        "difficulty": "easy"
+    }
+]
