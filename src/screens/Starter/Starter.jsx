@@ -63,7 +63,7 @@ const Starter = () => {
 								defaultValue={"All"}
 								data={cat}
 								onSelect={(selectedItem, index) => {
-									console.log(selectedItem, index)
+									
 									setCategory(selectedItem)
 								}}
 								buttonTextAfterSelection={(selectedItem, index) => {

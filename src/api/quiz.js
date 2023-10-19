@@ -27,7 +27,6 @@ export const getRegularQuestions = async () => {
 	let data = []
 	for (let i = 0; i < 10; i++) {
 		let correct = customData[i].correct
-		console.log(correct)
 		let answers = customData[i].answers
 		let question = customData[i].question
 		data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
@@ -74,7 +73,6 @@ export const getSpecificNumberOfRegularQuestions = async (
 		let answers = customData[i].answers
 		let question = customData[i].question
 		let category = customData[i].category
-		console.log(categoryType)
 		if (category == categoryType)
 			data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
 		else if (categoryType == "All")

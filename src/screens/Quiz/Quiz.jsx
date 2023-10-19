@@ -1,5 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useInterval } from "react";
 import { Text, SafeAreaView, ActivityIndicator, View, Dimensions } from "react-native";
 import CustomButton from "../../Components/CustomButton/CustomButton.jsx";
 import { useQuizContext } from "../../context/QuizContext.jsx";
@@ -24,9 +24,9 @@ function Quiz({ route }) {
 
 	const screenDimensions = Dimensions.get("screen");
 	const styles = getStyles(screenDimensions)
-	const { category} = route.params;
+	const { category } = route.params;
 	const [selectedOption, setSelectedOption] = useState("");
-
+	const [boolNewTimer, setBoolNewTimer] = useState()
 	const navigation = useNavigation();
 
 	const endOfQuestions = counter === numQuestions - 1;
@@ -45,47 +45,59 @@ function Quiz({ route }) {
 
 	const saveAnswer = (answer) => {
 		setSelectedOption(answer);
-
 		addAnswer({ id: counter, answer: answer });
 
 		if (!endOfQuestions) {
 			goToNextQuestion();
 		} else {
-			navigation.navigate("Finish", {category : category});
+			navigation.navigate("Finish", { category: category });
 		}
 	};
 
 	const goToNextQuestion = () => {
 		const nextQuestion = counter + 1;
 		updateCounter(nextQuestion);
+	
 		setSelectedOption("");
 	};
 
-	useEffect(() => {
-		fetchQuestions();
-	}, []);
+
 	const refTimer = useRef();
 
 	// For keeping a track on the Timer
 	const [timerEnd, setTimerEnd] = useState(false);
 	const [time, setTime] = useState(10);
-	const timerRef = React.useRef(time);
+	const intervalRef = useRef();
 
-	React.useEffect(() => {
-		const timerId = setInterval(() => {
-			timerRef.current -= 1;
-			if (timerRef.current < 0) {
-				timerRef.current = 10
-				saveAnswer("")
-			} else {
-				setTime(timerRef.current);
-			}
+	const interval = () => {
+		intervalRef.current = setInterval(() => {
+			setTime((prevTime) => prevTime - 1)
 		}, 1000);
-		return () => {
-			clearInterval(timerId);
-		};
+	};
+
+	useEffect(() => {
+		const intervalId = intervalRef.current;
+		return () => clearInterval(intervalId);
 	}, []);
 
+	useEffect(() => {
+		if (time <= 0) {
+			setTime(10)
+			saveAnswer("")
+		}
+	}, [time]);
+
+
+	useEffect(() => {
+		if(quizQuestions.length === 0)
+		{
+			
+			interval();
+		}
+			
+		fetchQuestions();
+	
+	}, []);
 
 	if (quizQuestions.length === 0) {
 		return <ActivityIndicator />;
@@ -105,7 +117,7 @@ function Quiz({ route }) {
 									<CustomButton
 										key={`${answer}-${index}`}
 										buttonText={answer}
-										onPress={() => saveAnswer(answer)}
+										onPress={() => {saveAnswer(answer); setTime(10)}}
 										type="primary"
 										fullWidth
 									/>
