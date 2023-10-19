@@ -3,6 +3,7 @@ export const initialState = {
 	recordedAnswers: [],
 	numQuestions: 10,
 	questionType: "",
+	categoryType:"",
 	counter: 0,
 };
 
@@ -30,6 +31,11 @@ export const quizReducer = (state, action) => {
 				...state,
 				questionType: payload.questionType,
 			};
+		case "UPDATE_CATEGORY_TYPE":
+			return {
+				...state,
+				questionType: payload.categoryType,
+			};
 		case "UPDATE_COUNTER":
 			return {
 				...state,
@@ -48,6 +54,7 @@ export const quizReducer = (state, action) => {
 				recordedAnswers: payload.recordedAnswers,
 				numQuestions: payload.numQuestions,
 				questionType: payload.questionType,
+				categoryType : payload.categoryType,
 				counter: payload.counter,
 			};
 		default:

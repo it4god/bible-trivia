@@ -42,6 +42,15 @@ export const QuizProvider = ({ children }) => {
 			},
 		});
 	};
+	const updateCategoryType = (categoryType) => {
+		dispatch({
+			type: "UPDATE_CATEGORY_TYPE",
+			payload: {
+				categoryType: categoryType,
+			},
+		});
+		console.log(categoryType)
+	};
 
 	const updateCounter = (num) => {
 		dispatch({
@@ -69,6 +78,7 @@ export const QuizProvider = ({ children }) => {
 					recordedAnswers: initialState.recordedAnswers,
 					numQuestions: initialState.numQuestions,
 					questionType: initialState.questionType,
+					categoryType : initialState.categoryType,
 					counter: initialState.counter,
 				},
 			});
@@ -80,11 +90,13 @@ export const QuizProvider = ({ children }) => {
 		recordedAnswers: state.recordedAnswers,
 		numQuestions: state.numQuestions,
 		questionType: state.questionType,
+		categoryType : state.categoryType,
 		counter: state.counter,
 		updateQuestions,
 		addAnswer,
 		updateNumQuestions,
 		updateQuestionType,
+		updateCategoryType,
 		updateCounter,
 		reset,
 	};

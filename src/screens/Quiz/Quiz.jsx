@@ -4,14 +4,13 @@ import { Text, SafeAreaView, ActivityIndicator, View, Dimensions } from "react-n
 import CustomButton from "../../Components/CustomButton/CustomButton.jsx";
 import { useQuizContext } from "../../context/QuizContext.jsx";
 import GradientWrapper from "../../Components/GradientWrapper/GradientWrapper.jsx";
-import CountDownTimer from 'react-native-countdown-timer-hooks';
 import getStyles from "./Quiz.style.js";
 import {
 	getTrueFalseQuestions,
 	getSpecificNumberOfRegularQuestions,
 } from "../../api/quiz.js";
 
-const Quiz = (props) => {
+function Quiz({ route }) {
 	const {
 		quizQuestions,
 		numQuestions,
@@ -20,11 +19,12 @@ const Quiz = (props) => {
 		addAnswer,
 		counter,
 		updateCounter,
+		categoryType,
 	} = useQuizContext();
 
 	const screenDimensions = Dimensions.get("screen");
 	const styles = getStyles(screenDimensions)
-
+	const { category} = route.params;
 	const [selectedOption, setSelectedOption] = useState("");
 
 	const navigation = useNavigation();
@@ -37,7 +37,7 @@ const Quiz = (props) => {
 			await updateQuestions(trueOrFalseQuestions);
 		} else {
 			const regularQuestions = await getSpecificNumberOfRegularQuestions(
-				numQuestions,
+				numQuestions, category
 			);
 			await updateQuestions(regularQuestions);
 		}
@@ -51,7 +51,7 @@ const Quiz = (props) => {
 		if (!endOfQuestions) {
 			goToNextQuestion();
 		} else {
-			navigation.navigate("Finish");
+			navigation.navigate("Finish", {category : category});
 		}
 	};
 
@@ -68,7 +68,7 @@ const Quiz = (props) => {
 
 	// For keeping a track on the Timer
 	const [timerEnd, setTimerEnd] = useState(false);
-	const [time, setTime] = React.useState(props.initialValue || 10);
+	const [time, setTime] = useState(10);
 	const timerRef = React.useRef(time);
 
 	React.useEffect(() => {

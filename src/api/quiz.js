@@ -32,11 +32,11 @@ export const getRegularQuestions = async () => {
 		let question = customData[i].question
 		data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
 	}
-	
+
 	let n = numberOfQuestions
 	if (data.length < numberOfQuestions)
 		n = data.length + 1
-	
+
 	shuffleArray(data)
 	newdata = []
 	for (let i = 0; i < n; i++) {
@@ -46,44 +46,49 @@ export const getRegularQuestions = async () => {
 
 	return newdata;
 }
-	/*
+/*
 
 	
-	const apiCall = await fetch("https://opentdb.com/api.php?amount=10");
-	const data = await apiCall.json();
-	return data.results.map((object, index) => {
-		return {
-			questionNumber: index,
-			question: decodeHtml(object.question),
-			answers: object.incorrect_answers.concat(object.correct_answer).sort(),
-			correctAnswer: object.correct_answer,
-		};
-	});
+const apiCall = await fetch("https://opentdb.com/api.php?amount=10");
+const data = await apiCall.json();
+return data.results.map((object, index) => {
+	return {
+		questionNumber: index,
+		question: decodeHtml(object.question),
+		answers: object.incorrect_answers.concat(object.correct_answer).sort(),
+		correctAnswer: object.correct_answer,
+	};
+});
 *.
 };
 */
 
 export const getSpecificNumberOfRegularQuestions = async (
-	numberOfQuestions,
+	numberOfQuestions, categoryType
 ) => {
 
 	const customData = require('./data.json');
 	let data = []
-	for (let i = 0; i < customData.length-1; i++) {
+	for (let i = 0; i < customData.length - 1; i++) {
 		let correct = customData[i].correct
-		console.log(correct)
 		let answers = customData[i].answers
 		let question = customData[i].question
-		data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
+		let category = customData[i].category
+		console.log(categoryType)
+		if (category == categoryType)
+			data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
+		else if (categoryType == "All")
+			data.push({ questionNumber: i, question: decodeHtml(question), answers: answers, correctAnswer: correct })
 	}
-	
+
 	let n = numberOfQuestions
 	if (data.length < numberOfQuestions)
 		n = data.length + 1
-	
+
 	shuffleArray(data)
 	newdata = []
 	for (let i = 0; i < n; i++) {
+
 		newdata[i] = data[i]
 	}
 
@@ -103,7 +108,7 @@ export const getSpecificNumberOfRegularQuestions = async (
 			correctAnswer: object.correct_answer,
 		};
 	});
-*/	
+*/
 };
 function shuffleArray(array) {
 	for (var i = array.length - 1; i > 0; i--) {

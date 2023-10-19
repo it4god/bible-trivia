@@ -1,5 +1,5 @@
 const palette = {
-	primary: "#3a8d71",
+	primary: "#6c4c0f",
 	accent: "#a2b965",
 	secondary: "#FF6347",
 	background: "#fdf9d9",

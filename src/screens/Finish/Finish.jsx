@@ -15,13 +15,13 @@ import GradientWrapper from "../../Components/GradientWrapper/GradientWrapper.js
 import LottieView from "lottie-react-native";
 import getStyles from "./Finish.style.";
 
-const Finish = () => {
+function Finish({ route }) {
 	const { quizQuestions, recordedAnswers, reset } = useQuizContext();
 	const [finalScore, setFinalScore] = useState(null);
 	const [answered, setAnswered] = useState(null);
 	const navigation = useNavigation();
 	const animation = useRef(null);
-
+	const { category} = route.params;
 	const screenDimensions = Dimensions.get("screen");
 	const styles = getStyles(screenDimensions);
 
@@ -39,7 +39,7 @@ const Finish = () => {
 	};
 
 	const playAgain = () => {
-		navigation.navigate("Quiz");
+		navigation.navigate("Quiz", {category : category});
 		reset("answers");
 	};
 

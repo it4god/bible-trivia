@@ -11,7 +11,7 @@ const getStyles = (screenDimensions) => {
 			width: "100%",
 			justifyContent: "center",
 			alignItems: "center",
-			backgroundColor: "transparent",
+			backgroundColor: "#f9ecdc",
 		},
 		gameContainer: {
 			width: "80%",
@@ -30,7 +30,7 @@ const getStyles = (screenDimensions) => {
 		title2: {
 			fontWeight: "bold",
 			fontSize: isTablet ? 50 : 24,
-			color: "#FFFFFF",
+			color: "gray",
 		},
 		subtitle: {
 			fontWeight: "bold",

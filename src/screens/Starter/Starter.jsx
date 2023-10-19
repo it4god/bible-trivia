@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
-import React from "react";
-import { Text, SafeAreaView, View, Image, Dimensions } from "react-native";
+import Reac, { useState } from "react";
+import { Text, SafeAreaView, View, Image, Dimensions, Alert } from "react-native";
 import CustomButton from "../../Components/CustomButton/CustomButton.jsx";
 import quizCat from "../../assets/images/quiz.jpg";
 import MaskedView from "@react-native-masked-view/masked-view";
@@ -10,11 +10,11 @@ import { useQuizContext } from "../../context/QuizContext.jsx";
 import Slider from "@react-native-community/slider";
 import Pawprint from "../../assets/images/pawprint.png";
 import getStyles from "./Starter.style.js";
-
+import SelectDropdown from 'react-native-select-dropdown'
 const questionTypes = ["Multiple Choice"];
 
 const Starter = () => {
-	const { numQuestions, questionType, updateNumQuestions, updateQuestionType } =
+	const { numQuestions, questionType, updateNumQuestions, updateQuestionType, categoryType, updateCategoryType } =
 		useQuizContext();
 
 	const screenDimensions = Dimensions.get("screen");
@@ -23,37 +23,15 @@ const Starter = () => {
 	const navigation = useNavigation();
 
 	const canStart = numQuestions && questionType;
-
+	const cat = ["All", "Nama & Tempat", "Perjanjian Lama", "Perjanjian Baru", "Natal", "Paskah"]
+	const [category, setCategory] = useState("All")
 	return (
 		<SafeAreaView style={styles.container}>
 			<View style={styles.innerContainer}>
-				<MaskedView
-					style={{ flex: 1, flexDirection: "row", height: "100%" }}
-					maskElement={
-						<View
-							style={{
-								// Transparent background because mask is based off alpha channel.
-								backgroundColor: "transparent",
-								flex: 1,
-								justifyContent: "center",
-								alignItems: "center",
-							}}
-						>
-							<Text style={styles.titleText}>Bible Quiz</Text>
-						</View>
-					}
-				>
-					{/* Shows behind the mask, you can put anything here, such as an image */}
-					<LinearGradient
-						colors={[palette.primary, palette.accent]}
-						start={{ x: 0, y: 1 }}
-						end={{ x: 0, y: 0.33 }}
-						style={{ flex: 1 }}
-					/>
-				</MaskedView>
 
 				<View style={styles.outerOptionsContainer}>
 					<View style={styles.optionsContainer}>
+					<Text style={styles.titleText}>Bible Quiz</Text>
 						<Text style={styles.subtitle}>
 							Choose number of questions: {numQuestions}
 						</Text>
@@ -72,33 +50,60 @@ const Starter = () => {
 					</View>
 
 					<View style={styles.optionsContainer}>
-						<View style={styles.questionType}>
+						<Text style={styles.subtitle}>
+							Category
+						</Text>
+						<View>
+							<SelectDropdown
 
-						</View>
-						<View style={styles.buttonsContainer}>
-							{questionTypes.map((qType, index) => (
-								<CustomButton
-									key={`${qType}-${index}`}
-									buttonText={qType}
-									onPress={() => updateQuestionType(qType)}
-									type="primary"
-								/>
-							))}
+								buttonStyle={{ backgroundColor: "#6c4c0f", borderRadius: 20 }}
+								buttonTextStyle={{ color: "#FFF" }}
+								dropdownStyle={{ backgroundColor: "#312900", marginTop: -60 }}
+								rowTextStyle={{ color: "#FFF" }}
+								defaultValue={"All"}
+								data={cat}
+								onSelect={(selectedItem, index) => {
+									console.log(selectedItem, index)
+									setCategory(selectedItem)
+								}}
+								buttonTextAfterSelection={(selectedItem, index) => {
+									// text represented after item is selected
+									// if data array is an array of objects then return selectedItem.property to render after item is selected
+									return selectedItem
+								}}
+								rowTextForSelection={(item, index) => {
+									// text represented for each item in dropdown
+									// if data array is an array of objects then return item.property to represent item in dropdown
+									return item
+								}}
+							/>
 						</View>
 					</View>
 					<CustomButton
 						width="80%"
 						buttonText="start"
-						onPress={() => navigation.navigate("Quiz")}
+						onPress={() => {
+							if (category == "") {
+								Alert.alert("Category Needed", "Please Select Category !")
+							}
+							else {
+								if (category == "Nama & Tempat" || category == "All")
+									navigation.navigate("Quiz", { category: category })
+								else
+									Alert.alert("No Questions", "No Questions in that Category !")
+							}
+						}}
 						type="secondary"
 					/>
 				</View>
 			</View>
-			<Image
-				source={quizCat}
-				alt="a hero cat on a quest"
-				style={styles.homeImage}
-			/>
+
+				<Image
+							source={quizCat}
+							alt="a hero cat on a quest"
+							style={styles.homeImage}
+						/>
+
 		</SafeAreaView>
 	);
 };

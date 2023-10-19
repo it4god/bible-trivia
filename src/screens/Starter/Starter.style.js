@@ -28,12 +28,12 @@ const getStyles = (screenDimensions) => {
 			fontSize:  60,
 			fontWeight: "bold",
 			fontFamily: "Blaka_400Regular",
-			color: palette.primary,
+			color: palette.accent,
 		},
 		subtitle: {
 			fontSize: isTablet ? 20 : 14,
 			fontWeight: "bold",
-			marginVertical: 10,
+			marginVertical: 5,
 			color: palette.primary,
 		},
 		optionsContainer: {
@@ -44,7 +44,7 @@ const getStyles = (screenDimensions) => {
 			marginVertical: isTablet ? 10 : 1,
 		},
 		homeImage: {
-			height: isTablet ? "75%" : 400,
+			height: 400,
 			width: "100%",
 			position: "absolute",
 			bottom: isTablet ? -80 : -10,
