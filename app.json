@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Bible-Trivia",
-    "slug": "bible-trivia",
+    "name": "Bible-Quiz",
+    "slug": "bible-quiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f9ecdc"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -25,16 +25,18 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#f9ecdc"
+      },
+      "package": "com.limpingen.biblequiz"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "5f6b1ee5-1753-4762-8be0-cf274400972d"
+        "projectId": "95fffe01-0ce5-4452-b484-2d8201c906b2"
       }
-    }
+    },
+    "owner": "limpingen777"
   }
 }
